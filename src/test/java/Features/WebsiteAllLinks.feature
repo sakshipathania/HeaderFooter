@@ -11,6 +11,8 @@ Scenario:
 	Then Popular PPT Page.
 	Then Template Finder Page.
 	Then Blog Page.
+	Then Presentation Services Page.
+	Then Research Services.
 	Then About Us Page.
 	Then Site Map Page.
 	Then Contact Us Page.
