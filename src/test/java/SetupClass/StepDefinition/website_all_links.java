@@ -246,7 +246,7 @@ public class website_all_links extends Setup {
 	}
 	
 	@Then("^Research Services\\.$")
-	public void Presentation_Services_Page() throws Throwable {
+	public void Research_Services() throws Throwable {
 		WebElement Research_Services= wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@class='menu-link'][contains(.,'Research Services')]")));
 		clear_cache();
 		Thread.sleep(3000);
