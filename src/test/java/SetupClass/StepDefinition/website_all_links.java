@@ -217,6 +217,8 @@ public class website_all_links extends Setup {
 		actions.moveToElement(Our_Services_btn2).moveToElement(driver.findElement(By.xpath("//a[contains(text(),'Research Services')]"))).click().build().perform();
 		Thread.sleep(7000);*/
 	}
+	
+	
 
 	/*@Then("^Free Business PPTs Page\\.$")
 	public void free_Business_PPTs_Page() throws Throwable {
@@ -230,7 +232,32 @@ public class website_all_links extends Setup {
 		err_page();
 	} */
 
+	@Then("^Presentation Services Page\\.$")
+	public void Presentation_Services_Page() throws Throwable {
+		WebElement Presentation_Services= wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@class='menu-link'][contains(.,'Presentation Services')]")));
+		clear_cache();
+		Thread.sleep(3000);
+		js.executeScript("arguments[0].scrollIntoView();",Presentation_Services);
+		Presentation_Services.click();
+		log.info("PRESENTATION SERVICES");
+		Thread.sleep(3000);
+		chat_pop_up();
+		err_page();
+	}
 	
+	@Then("^Research Services\\.$")
+	public void Presentation_Services_Page() throws Throwable {
+		WebElement Research_Services= wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@class='menu-link'][contains(.,'Research Services')]")));
+		clear_cache();
+		Thread.sleep(3000);
+		js.executeScript("arguments[0].scrollIntoView();",Research_Services);
+		Research_Services.click();
+		log.info("RESEARCH SERVICES");
+		Thread.sleep(3000);
+		chat_pop_up();
+		err_page();
+	}
+
 
 	@Then("^About Us Page\\.$")
 	public void About_Us_Page() throws Throwable {
