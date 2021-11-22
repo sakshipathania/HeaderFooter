@@ -490,6 +490,10 @@ public class website_all_links extends Setup {
 		chat_pop_up();
 		err_page();
 		
+		Thread.sleep(2000);
+		WebElement Logout= wait.until(ExpectedConditions.elementToBeClickable(By.linkText("LOGOUT")));
+		Logout.click();
+		
 	}
 
 
