@@ -368,5 +368,9 @@ public class Footer2 extends Setup {
 		  Thread.sleep(1500); 
 		  err_page();
 		} catch(NoSuchElementException vw) { }
+		
+		Thread.sleep(2000);
+		WebElement Logout= wait.until(ExpectedConditions.elementToBeClickable(By.linkText("LOGOUT")));
+		Logout.click();
 	}
 }
