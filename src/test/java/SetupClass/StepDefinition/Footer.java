@@ -327,6 +327,9 @@ public class Footer extends Setup {
 		catch(NoSuchElementException cm) { }
 	}
 	
+	Thread.sleep(2000);
+		WebElement Logout= wait.until(ExpectedConditions.elementToBeClickable(By.linkText("LOGOUT")));
+		Logout.click();
 	
 	
 	}
