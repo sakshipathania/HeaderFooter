@@ -78,11 +78,11 @@ public class Footer extends Setup {
 		driver.get(AppURL);
 	driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 	log.info("It's opening the website URL");
-	Thread.sleep(1000);
-	driver.get("https://www.slideteam.net");
-	Thread.sleep(2000);
-	driver.get("https://www.slideteam.net");
-	Thread.sleep(2000);
+	//Thread.sleep(1000);
+	//driver.get("https://www.slideteam.net");
+	//Thread.sleep(2000);
+	//driver.get("https://www.slideteam.net");
+	//Thread.sleep(2000);
          driver.manage().deleteAllCookies();
          Thread.sleep(2000);
 	try {
@@ -113,7 +113,7 @@ public class Footer extends Setup {
 		
 		WebElement footer_1= wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//li[@class='first'][contains(.,'Free Business PPT')]")));
 		Thread.sleep(3000);
-		clear_cache();
+		//clear_cache();
 		js.executeScript("arguments[0].scrollIntoView();",footer_1);
 		footer_1.click();
 		log.info("FOOTER --> 1 || FREE STUFF || FREE BUSINESS PPT");
@@ -129,7 +129,7 @@ public class Footer extends Setup {
 		
 		WebElement footer_2= wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[2]/footer/div/div/div[2]/div/div[1]/ul/li[3]/a")));
 		Thread.sleep(3000);
-		clear_cache();
+		//clear_cache();
 		js.executeScript("arguments[0].scrollIntoView();",footer_2);
 		footer_2.click();
 		log.info("FOOTER --> 3 || FREE STUFF || FREE PPT Template");
@@ -144,7 +144,7 @@ public class Footer extends Setup {
 		
 		WebElement footer_3= wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[2]/footer/div/div/div[2]/div/div[1]/ul/li[3]/a")));
 		Thread.sleep(3000);
-		clear_cache();
+		//clear_cache();
 		js.executeScript("arguments[0].scrollIntoView();",footer_3);
 		footer_3.click();
 		log.info("FOOTER --> 4 || FREE STUFF || FREE EDITABLE PPT");
@@ -322,6 +322,7 @@ public class Footer extends Setup {
 		  log.info("FOOTER --> 17 || POPULAR PPT || CHANAGE MANAGEMENT"); 
 		  chat_pop_up();
 		  Thread.sleep(1500); 
+		  clear_cache();
 		  err_page();
 		}
 		catch(NoSuchElementException cm) { }
