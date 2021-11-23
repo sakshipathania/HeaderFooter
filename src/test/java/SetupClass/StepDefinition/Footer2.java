@@ -78,11 +78,11 @@ public class Footer2 extends Setup {
 		driver.get(AppURL);
 	driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 	log.info("It's opening the website URL");
-	Thread.sleep(1000);
-	driver.get("https://www.slideteam.net");
-	Thread.sleep(2000);
-	driver.get("https://www.slideteam.net");
-	Thread.sleep(2000);
+	//Thread.sleep(1000);
+	//driver.get("https://www.slideteam.net");
+	//Thread.sleep(2000);
+	//driver.get("https://www.slideteam.net");
+	//Thread.sleep(2000);
          driver.manage().deleteAllCookies();
          Thread.sleep(2000);
 	try {
@@ -103,7 +103,7 @@ public class Footer2 extends Setup {
                WebElement old_paid_pass = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[2]/main/div[2]/div/div[2]/div[2]/div[2]/form/fieldset/div[3]/div/input")));
                old_paid_pass.sendKeys("Qwerty@1");
 	       
-	       Thread.sleep(3000);
+	       Thread.sleep(1000);
 	       WebElement old_paid_login_btn=wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("button.login > span:nth-child(1)")));
 	       old_paid_login_btn.click();
         }
@@ -285,7 +285,7 @@ public class Footer2 extends Setup {
 		
 		try {
 		 WebElement footer_27= driver.findElement(By.xpath("//a[@href='/powerpoint-presentation-essentials/organizational-structure-slides.html'][contains(.,'Org Structure PPT"));
-		  Thread.sleep(3000); 
+		  Thread.sleep(1000); 
 		js.executeScript("arguments[0].scrollIntoView();",footer_27);
 		  footer_27.click();
 		  log.info("FOOTER --> 29 || POPULAR PPT || Org Structure PPT"); 
@@ -367,6 +367,7 @@ public class Footer2 extends Setup {
 		  chat_pop_up();
 		  Thread.sleep(1500); 
 		  err_page();
+	         clear_cache();
 		} catch(NoSuchElementException vw) { }
 		
 	}
