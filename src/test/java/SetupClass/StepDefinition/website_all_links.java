@@ -78,10 +78,10 @@ public class website_all_links extends Setup {
 	driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 	log.info("It's opening the website URL");
 	Thread.sleep(1000);
-	driver.get("https://www.slideteam.net");
-	Thread.sleep(2000);
-	driver.get("https://www.slideteam.net");
-	Thread.sleep(2000);
+	//driver.get("https://www.slideteam.net");
+	//Thread.sleep(2000);
+	//driver.get("https://www.slideteam.net");
+	//Thread.sleep(2000);
          driver.manage().deleteAllCookies();
          Thread.sleep(2000);
 	try {
@@ -111,7 +111,7 @@ public class website_all_links extends Setup {
 	public void Pricing_Page() throws Throwable {
 	    
 		WebElement price = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@class='menu-link'][contains(.,'Pricing')]")));
-		clear_cache();
+		///clear_cache();
 		Thread.sleep(3000);
 		price.click();
 		log.info("PRICING");
@@ -147,7 +147,7 @@ public class website_all_links extends Setup {
 	@Then("^Popular PPT Page\\.$")
 	public void Popular_PPT_Page() throws Throwable {
 		WebElement Popular_ppt = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@class='menu-link'][contains(.,'Popular PPTs')]")));
-		clear_cache();
+		//clear_cache();
 		Thread.sleep(3000);
 		Popular_ppt.click();
 		log.info("Popular PPTs");
@@ -159,7 +159,7 @@ public class website_all_links extends Setup {
 	@Then("^Template Finder Page\\.$")
 	public void Template_Finder_Page() throws Throwable {
 		WebElement template_finder= wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@class='menu-link'][contains(.,'Template Finder')]")));
-		clear_cache();
+		//clear_cache();
 		Thread.sleep(3000);
 		js.executeScript("arguments[0].scrollIntoView();",template_finder);
 		template_finder.click();
@@ -176,7 +176,7 @@ public class website_all_links extends Setup {
 	@Then("^Blog Page\\.$")
 	public void Blog_Page() throws Throwable {
 		WebElement blog_page = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@class='menu-link'][contains(.,'Blog')]")));
-		clear_cache();
+		//clear_cache();
 		Thread.sleep(3000);
 		blog_page.click();
 		log.info("BLOG");
@@ -186,7 +186,7 @@ public class website_all_links extends Setup {
 		
 		Thread.sleep(4000);
 		WebElement eBooks = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@class='menu-link'][contains(.,'eBooks')]")));
-		clear_cache();
+		//clear_cache();
 		Thread.sleep(3000);
 		eBooks.click();
 		log.info("EBOOKS");
@@ -235,7 +235,7 @@ public class website_all_links extends Setup {
 	@Then("^Presentation Services Page\\.$")
 	public void Presentation_Services_Page() throws Throwable {
 		WebElement Presentation_Services= wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@class='menu-link'][contains(.,'Presentation Services')]")));
-		clear_cache();
+		//clear_cache();
 		Thread.sleep(3000);
 		js.executeScript("arguments[0].scrollIntoView();",Presentation_Services);
 		Presentation_Services.click();
@@ -248,7 +248,7 @@ public class website_all_links extends Setup {
 	@Then("^Research Services\\.$")
 	public void Research_Services() throws Throwable {
 		WebElement Research_Services= wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@class='menu-link'][contains(.,'Research Services')]")));
-		clear_cache();
+		//clear_cache();
 		Thread.sleep(3000);
 		js.executeScript("arguments[0].scrollIntoView();",Research_Services);
 		Research_Services.click();
@@ -263,7 +263,7 @@ public class website_all_links extends Setup {
 	public void About_Us_Page() throws Throwable {
 		try {
 		WebElement about_us_footer= wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@title=' About Us'][contains(.,'About Us')]")));
-		clear_cache();
+		//clear_cache();
 		Thread.sleep(3000);
 		js.executeScript("arguments[0].scrollIntoView();",about_us_footer);
 		about_us_footer.click();
@@ -280,7 +280,7 @@ public class website_all_links extends Setup {
 	@Then("^Site Map Page\\.$")
 	public void Site_Map_Page() throws Throwable {
 		WebElement site_map_footer= wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@title='Site Map'][contains(.,'Site Map')]")));
-		clear_cache();
+		//clear_cache();
 		js.executeScript("arguments[0].scrollIntoView();",site_map_footer);
 		Thread.sleep(3000);
 		site_map_footer.click();
@@ -293,7 +293,7 @@ public class website_all_links extends Setup {
 	@Then("^Contact Us Page\\.$")
 	public void Contact_Us_Page() throws Throwable {
 		WebElement contact_us_footer= wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@title=' Contact Us'][contains(.,'Contact Us')]")));
-		clear_cache();
+		//clear_cache();
 		Thread.sleep(3000);
 		js.executeScript("arguments[0].scrollIntoView();",contact_us_footer);
 		contact_us_footer.click();
@@ -306,7 +306,7 @@ public class website_all_links extends Setup {
 	@Then("^FAQ Page\\.$")
 	public void FAQ_Page() throws Throwable {
 		WebElement faq_footer= wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@title='FAQ'][contains(.,'FAQ')]")));
-		clear_cache();
+		//clear_cache();
 		Thread.sleep(3000);
 		js.executeScript("arguments[0].scrollIntoView();",faq_footer);
 		faq_footer.click();
@@ -319,7 +319,7 @@ public class website_all_links extends Setup {
 	@Then("^Terms of Use Page\\.$")
 	public void Terms_of_Use_Page() throws Throwable {
 		WebElement terms_footer= wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@title=' Terms of Use'][contains(.,'Terms of Use')]")));
-		clear_cache();
+		//clear_cache();
 		js.executeScript("arguments[0].scrollIntoView();",terms_footer);
 		Thread.sleep(3000);
 		terms_footer.click();
@@ -332,7 +332,7 @@ public class website_all_links extends Setup {
 	@Then("^Privacy Policy Page\\.$")
 	public void Privacy_Policy_Page() throws Throwable {
 		WebElement p_policy_footer= wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@title='Privacy Policy'][contains(.,'Privacy Policy')]")));
-		clear_cache();
+		//clear_cache();
 		js.executeScript("arguments[0].scrollIntoView();",p_policy_footer);
 		Thread.sleep(3000);
 		p_policy_footer.click();
@@ -346,7 +346,7 @@ public class website_all_links extends Setup {
 	public void Popular_Free_Slides_Page() throws Throwable {
 		WebElement popular_free_footer= wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[2]/footer/div/div/div[2]/div/div[6]/ul/li[7]/a")));
 		Thread.sleep(3000);
-		clear_cache();
+		//clear_cache();
 		js.executeScript("arguments[0].scrollIntoView();",popular_free_footer);
 		popular_free_footer.click();
 		log.info("FOOTER --> POPULAR FREE SLIDES");
@@ -359,7 +359,7 @@ public class website_all_links extends Setup {
 	public void Custom_Design_Services_Page() throws Throwable {
 		WebElement cds_footer= wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@title='Business Slides'][contains(.,'Custom Design Services')]")));
 		Thread.sleep(3000);
-		clear_cache();
+		//clear_cache();
 		js.executeScript("arguments[0].scrollIntoView();",cds_footer);
 		cds_footer.click();
 		log.info("FOOTER --> CUSTOM DESIGN SERVICES");
@@ -373,7 +373,7 @@ public class website_all_links extends Setup {
 	public void Resume_Services_Page() throws Throwable {
 		WebElement Resume_footer= wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@title='Resume Services'][contains(.,'Resume Services')]")));
 		Thread.sleep(3000);
-		clear_cache();
+		//clear_cache();
 		js.executeScript("arguments[0].scrollIntoView();",Resume_footer);
 		Resume_footer.click();
 		log.info("FOOTER --> RESUME SERVICES");
@@ -388,7 +388,7 @@ public class website_all_links extends Setup {
 	public void Google_Slides_Page() throws Throwable {
 		WebElement g_slide_footer= wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@title='Google Slides'][contains(.,'Google Slides')]")));
 		Thread.sleep(3000);
-		clear_cache();
+		//clear_cache();
 		js.executeScript("arguments[0].scrollIntoView();",g_slide_footer);
 		g_slide_footer.click();
 		log.info("FOOTER --> GOOGLE SLIDES");
@@ -401,7 +401,7 @@ public class website_all_links extends Setup {
 	public void Coupon_Code() throws Throwable {
 		WebElement CC_footer= wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@title='Coupon Code'][contains(.,'Coupon Code')]")));
 		Thread.sleep(3000);
-		clear_cache();
+		//clear_cache();
 		js.executeScript("arguments[0].scrollIntoView();",CC_footer);
 		CC_footer.click();
 		log.info("FOOTER --> COUPON CODE");
@@ -414,7 +414,7 @@ public class website_all_links extends Setup {
 	public void Newly_Added() throws Throwable {
 		WebElement nd_footer= wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@title='Newly Added'][contains(.,'Newly Added')]")));
 		Thread.sleep(3000);
-		clear_cache();
+		//clear_cache();
 		js.executeScript("arguments[0].scrollIntoView();",nd_footer);
 		nd_footer.click();
 		log.info("FOOTER --> NEWLY ADDED");
@@ -427,7 +427,7 @@ public class website_all_links extends Setup {
 	public void Color_PPT() throws Throwable {
 		WebElement color_footer= wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[2]/footer/div/div/div[2]/div/div[2]/ul/li[1]/a")));
 		Thread.sleep(3000);
-		clear_cache();
+		//clear_cache();
 		js.executeScript("arguments[0].scrollIntoView();",color_footer);
 		color_footer.click();
 		log.info("FOOTER --> COLOR PPT");
@@ -440,7 +440,7 @@ public class website_all_links extends Setup {
 	public void Google_Powerpoint() throws Throwable {
 		WebElement Google_footer= wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[2]/footer/div/div/div[2]/div/div[2]/ul/li[4]/a")));
 		Thread.sleep(3000);
-		clear_cache();
+	//	clear_cache();
 		js.executeScript("arguments[0].scrollIntoView();",Google_footer);
 		Google_footer.click();
 		log.info("FOOTER --> GOOGLE POWERPOINT");
@@ -454,7 +454,7 @@ public class website_all_links extends Setup {
 	public void Highlight_Picture_PPT() throws Throwable {
 		WebElement Highlight_footer= wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[2]/footer/div/div/div[2]/div/div[2]/ul/li[7]/a")));
 		Thread.sleep(3000);
-		clear_cache();
+		//clear_cache();
 		js.executeScript("arguments[0].scrollIntoView();",Highlight_footer);
 		Highlight_footer.click();
 		log.info("FOOTER --> HIGHLIGHT PICTURE PPT");
@@ -468,7 +468,7 @@ public class website_all_links extends Setup {
 	public void PPT_Zoom_Image() throws Throwable {
 		WebElement Zoom_footer= wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[2]/footer/div/div/div[2]/div/div[2]/ul/li[11]/a")));
 		Thread.sleep(3000);
-		clear_cache();
+		//clear_cache();
 		js.executeScript("arguments[0].scrollIntoView();",Zoom_footer);
 		Zoom_footer.click();
 		log.info("FOOTER --> PPT ZOOM IMAGE");
@@ -482,14 +482,14 @@ public class website_all_links extends Setup {
 	public void PPT_Puzzle_Pieces() throws Throwable {
 		WebElement Puzzle_footer= wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[2]/footer/div/div/div[2]/div/div[2]/ul/li[14]/a")));
 		Thread.sleep(3000);
-		clear_cache();
+		//clear_cache();
 		js.executeScript("arguments[0].scrollIntoView();",Puzzle_footer);
 		Puzzle_footer.click();
 		log.info("FOOTER --> PPT PUZZLE PIECES");
 		Thread.sleep(3000);
 		chat_pop_up();
 		err_page();
-		
+		clear_cache();
 		
 		
 	}
