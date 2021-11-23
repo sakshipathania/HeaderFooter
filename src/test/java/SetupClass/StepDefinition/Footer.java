@@ -325,11 +325,13 @@ public class Footer extends Setup {
 		  err_page();
 		}
 		catch(NoSuchElementException cm) { }
-	}
-	
+		
+		
 	Thread.sleep(2000);
 		WebElement Logout= wait.until(ExpectedConditions.elementToBeClickable(By.linkText("LOGOUT")));
 		Logout.click();
+	}
+	
 	
 	
 	}
