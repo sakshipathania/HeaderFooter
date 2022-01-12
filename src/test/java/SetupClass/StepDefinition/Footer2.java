@@ -84,7 +84,10 @@ public class Footer2 extends Setup {
 	//driver.get("https://www.slideteam.net");
 	//Thread.sleep(2000);
          driver.manage().deleteAllCookies();
-         Thread.sleep(2000);
+	 Thread.sleep(4000); // wait 4 seconds to clear cookies.
+	 driver.navigate().refresh();
+	 Thread.sleep(2000);
+        
 	try {
 		driver.findElement(By.cssSelector(".authorization-link > a:nth-child(1)")).click();
 		Thread.sleep(2000);
