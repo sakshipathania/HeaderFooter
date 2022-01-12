@@ -24,7 +24,9 @@ public class Footer extends Setup {
 	public void clear_cache() throws InterruptedException
 	{
 		driver.manage().deleteAllCookies();
-		Thread.sleep(4200);
+		Thread.sleep(4000); // wait 4 seconds to clear cookies.
+		driver.navigate().refresh();
+		Thread.sleep(2000);
 		log.info("DELETE COOKIES");
 	}
 	
