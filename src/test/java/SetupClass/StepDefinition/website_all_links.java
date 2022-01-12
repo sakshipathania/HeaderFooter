@@ -82,6 +82,9 @@ public class website_all_links extends Setup {
 	//Thread.sleep(2000);
 	
          driver.manage().deleteAllCookies();
+	Thread.sleep(4000); // wait 4 seconds to clear cookies.
+	driver.navigate().refresh();
+	Thread.sleep(2000);
 	 driver.get("https://www.slideteam.net");
 	//Thread.sleep(2000);
          Thread.sleep(2000);
