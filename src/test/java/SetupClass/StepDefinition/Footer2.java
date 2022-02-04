@@ -109,11 +109,18 @@ public class Footer2 extends Setup {
 	       Thread.sleep(1000);
 	       WebElement old_paid_login_btn=wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("button.login > span:nth-child(1)")));
 	       old_paid_login_btn.click();
+	       Thread.sleep(3000);
+	       if (!driver.findElements(By.xpath("//div[@class='login-attempt-popup']")).isEmpty()) {
+				WebElement approve = wait
+						.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='confirm-approve']")));
+				approve.click();
+			}
         }
            @Then("^Company Powerpoint\\.$")
 	public void Company_Powerpoint() throws Throwable {
 		
 		try {
+	          Thread.sleep(3000);
 		  WebElement footer_16= driver.findElement(By.xpath("//a[@href='/company-overview-powerpoint-presentation-slides.html'][contains(.,'Company PowerPoint"));
 		  Thread.sleep(3000); 
 		js.executeScript("arguments[0].scrollIntoView();",footer_16);
