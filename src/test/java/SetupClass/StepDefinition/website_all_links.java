@@ -109,6 +109,7 @@ public class website_all_links extends Setup {
 	       Thread.sleep(3000);
 	       WebElement old_paid_login_btn=wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("button.login > span:nth-child(1)")));
 	       old_paid_login_btn.click();
+	       Thread.sleep(3000);
 	       if (!driver.findElements(By.xpath("//div[@class='login-attempt-popup']")).isEmpty()) {
 				WebElement approve = wait
 						.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='confirm-approve']")));
