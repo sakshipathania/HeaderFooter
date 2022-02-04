@@ -120,7 +120,7 @@ public class website_all_links extends Setup {
 	
 	@Then("^Pricing Page\\.$")
 	public void Pricing_Page() throws Throwable {
-	    
+	        Thread.sleep(4000);
 		WebElement price = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@class='menu-link'][contains(.,'Pricing')]")));
 		///clear_cache();
 		Thread.sleep(3000);
