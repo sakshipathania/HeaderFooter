@@ -277,7 +277,7 @@ public class website_all_links extends Setup {
 		//clear_cache();
 		Thread.sleep(3000);
 		js.executeScript("arguments[0].scrollIntoView();",about_us_footer);
-		about_us_footer.click();
+		js.executeScript("arguments[0].click();",about_us_footer);
 		log.info("FOOTER --> ABOUT US");
 		Thread.sleep(3000);
 		chat_pop_up();
@@ -294,7 +294,7 @@ public class website_all_links extends Setup {
 		//clear_cache();
 		js.executeScript("arguments[0].scrollIntoView();",site_map_footer);
 		Thread.sleep(3000);
-		site_map_footer.click();
+		js.executeScript("arguments[0].click();",site_map_footer);
 		log.info("FOOTER --> SITE MAP");
 		Thread.sleep(3000);
 		chat_pop_up();
@@ -307,7 +307,7 @@ public class website_all_links extends Setup {
 		//clear_cache();
 		Thread.sleep(3000);
 		js.executeScript("arguments[0].scrollIntoView();",contact_us_footer);
-		contact_us_footer.click();
+		js.executeScript("arguments[0].click();",contact_us_footer);
 		log.info("FOOTER --> CONTACT US");
 		Thread.sleep(3000);
 		chat_pop_up();
@@ -320,7 +320,7 @@ public class website_all_links extends Setup {
 		//clear_cache();
 		Thread.sleep(3000);
 		js.executeScript("arguments[0].scrollIntoView();",faq_footer);
-		faq_footer.click();
+		js.executeScript("arguments[0].click();",faq_footer);
 		log.info("FOOTER --> FAQ");
 		Thread.sleep(3000);
 		chat_pop_up();
@@ -333,7 +333,7 @@ public class website_all_links extends Setup {
 		//clear_cache();
 		js.executeScript("arguments[0].scrollIntoView();",terms_footer);
 		Thread.sleep(3000);
-		terms_footer.click();
+		js.executeScript("arguments[0].click();",terms_footer);
 		log.info("FOOTER --> TERMS OF USE");
 		Thread.sleep(3000);
 		chat_pop_up();
@@ -346,7 +346,7 @@ public class website_all_links extends Setup {
 		//clear_cache();
 		js.executeScript("arguments[0].scrollIntoView();",p_policy_footer);
 		Thread.sleep(3000);
-		p_policy_footer.click();
+		js.executeScript("arguments[0].click();",p_policy_footer);
 		log.info("FOOTER --> PRIVACY POLICY");
 		Thread.sleep(3000);
 		chat_pop_up();
@@ -359,7 +359,7 @@ public class website_all_links extends Setup {
 		Thread.sleep(3000);
 		//clear_cache();
 		js.executeScript("arguments[0].scrollIntoView();",popular_free_footer);
-		popular_free_footer.click();
+		js.executeScript("arguments[0].click();",popular_free_footer);
 		log.info("FOOTER --> POPULAR FREE SLIDES");
 		Thread.sleep(3000);
 		chat_pop_up();
@@ -372,7 +372,7 @@ public class website_all_links extends Setup {
 		Thread.sleep(3000);
 		//clear_cache();
 		js.executeScript("arguments[0].scrollIntoView();",cds_footer);
-		cds_footer.click();
+		js.executeScript("arguments[0].click();",cds_footer);
 		log.info("FOOTER --> CUSTOM DESIGN SERVICES");
 		Thread.sleep(3000);
 		chat_pop_up();
@@ -386,7 +386,7 @@ public class website_all_links extends Setup {
 		Thread.sleep(3000);
 		//clear_cache();
 		js.executeScript("arguments[0].scrollIntoView();",Resume_footer);
-		Resume_footer.click();
+		js.executeScript("arguments[0].click();",Resume_footer);
 		log.info("FOOTER --> RESUME SERVICES");
 		Thread.sleep(2000);
 		driver.get("https://www.slideteam.net/");
@@ -401,7 +401,7 @@ public class website_all_links extends Setup {
 		Thread.sleep(3000);
 		//clear_cache();
 		js.executeScript("arguments[0].scrollIntoView();",g_slide_footer);
-		g_slide_footer.click();
+		js.executeScript("arguments[0].click();",g_slide_footer);
 		log.info("FOOTER --> GOOGLE SLIDES");
 		Thread.sleep(3000);
 		chat_pop_up();
@@ -414,7 +414,7 @@ public class website_all_links extends Setup {
 		Thread.sleep(3000);
 		//clear_cache();
 		js.executeScript("arguments[0].scrollIntoView();",CC_footer);
-		CC_footer.click();
+		js.executeScript("arguments[0].click();",CC_footer);
 		log.info("FOOTER --> COUPON CODE");
 		Thread.sleep(3000);
 		chat_pop_up();
@@ -427,7 +427,7 @@ public class website_all_links extends Setup {
 		Thread.sleep(3000);
 		//clear_cache();
 		js.executeScript("arguments[0].scrollIntoView();",nd_footer);
-		nd_footer.click();
+		js.executeScript("arguments[0].click();",nd_footer);
 		log.info("FOOTER --> NEWLY ADDED");
 		Thread.sleep(3000);
 		chat_pop_up();
@@ -440,7 +440,7 @@ public class website_all_links extends Setup {
 		Thread.sleep(3000);
 		//clear_cache();
 		js.executeScript("arguments[0].scrollIntoView();",color_footer);
-		color_footer.click();
+		js.executeScript("arguments[0].click();",color_footer);
 		log.info("FOOTER --> COLOR PPT");
 		Thread.sleep(3000);
 		chat_pop_up();
@@ -453,7 +453,7 @@ public class website_all_links extends Setup {
 		Thread.sleep(3000);
 	//	clear_cache();
 		js.executeScript("arguments[0].scrollIntoView();",Google_footer);
-		Google_footer.click();
+		js.executeScript("arguments[0].click();",Google_footer);
 		log.info("FOOTER --> GOOGLE POWERPOINT");
 		Thread.sleep(3000);
 		chat_pop_up();
@@ -467,7 +467,7 @@ public class website_all_links extends Setup {
 		Thread.sleep(3000);
 		//clear_cache();
 		js.executeScript("arguments[0].scrollIntoView();",Highlight_footer);
-		Highlight_footer.click();
+		js.executeScript("arguments[0].click();",Highlight_footer);
 		log.info("FOOTER --> HIGHLIGHT PICTURE PPT");
 		Thread.sleep(3000);
 		chat_pop_up();
@@ -481,7 +481,7 @@ public class website_all_links extends Setup {
 		Thread.sleep(3000);
 		//clear_cache();
 		js.executeScript("arguments[0].scrollIntoView();",Zoom_footer);
-		Zoom_footer.click();
+		js.executeScript("arguments[0].click();",Zoom_footer);
 		log.info("FOOTER --> PPT ZOOM IMAGE");
 		Thread.sleep(3000);
 		chat_pop_up();
@@ -495,7 +495,7 @@ public class website_all_links extends Setup {
 		Thread.sleep(3000);
 		//clear_cache();
 		js.executeScript("arguments[0].scrollIntoView();",Puzzle_footer);
-		Puzzle_footer.click();
+		js.executeScript("arguments[0].click();",Puzzle_footer);
 		log.info("FOOTER --> PPT PUZZLE PIECES");
 		Thread.sleep(3000);
 		chat_pop_up();
