@@ -91,7 +91,7 @@ public class Footer extends Setup {
 	Thread.sleep(2000);
 	try {
 		driver.findElement(By.cssSelector(".authorization-link > a:nth-child(1)")).click();
-		Thread.sleep(2000);
+		Thread.sleep(5000);
 		log.info("It's opening the website URL");
 	} 
 	catch (NoSuchElementException popup) {
@@ -120,7 +120,7 @@ public class Footer extends Setup {
         
       @Then("^Free Business PPT\\.$")
 	public void Free_Business_PPT() throws Throwable {
-	        Thread.sleep(3000);
+	        Thread.sleep(5000);
 		WebElement footer_1= wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//li[@class='first'][contains(.,'Free Business PPT')]")));
 		Thread.sleep(3000);
 		//clear_cache();
