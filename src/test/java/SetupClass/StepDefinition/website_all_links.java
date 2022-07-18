@@ -89,18 +89,16 @@ public class website_all_links extends Setup {
 
 	@Then("^user enter email and password epu$")
 	public void user_enter_email_and_password_epu() throws InterruptedException {
-		Thread.sleep(2000);
-		WebElement old_paid_email = wait.until(ExpectedConditions.elementToBeClickable(
-				By.xpath("/html/body/div[2]/main/div[2]/div/div[2]/div[2]/div[2]/form/fieldset/div[2]/div/input")));
-		old_paid_email.sendKeys("sakshi.pathania@slidetech.in");
+		WebElement old_paid_email = wait
+				.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='email']")));
+		old_paid_email.sendKeys("nishadhiman0027@gmail.com");
 
-		WebElement old_paid_pass = wait.until(ExpectedConditions.elementToBeClickable(
-				By.xpath("/html/body/div[2]/main/div[2]/div/div[2]/div[2]/div[2]/form/fieldset/div[3]/div/input")));
+		WebElement old_paid_pass = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='pass']")));
 		old_paid_pass.sendKeys("Qwerty@1");
 
 		Thread.sleep(3000);
 		WebElement old_paid_login_btn = wait
-				.until(ExpectedConditions.elementToBeClickable(By.cssSelector("button.login > span:nth-child(1)")));
+				.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='send2']")));
 		old_paid_login_btn.click();
 		Thread.sleep(3000);
 		if (!driver.findElements(By.xpath("//div[@class='login-attempt-popup']")).isEmpty()) {
@@ -108,7 +106,6 @@ public class website_all_links extends Setup {
 					.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='confirm-approve']")));
 			approve.click();
 		}
-
 	}
 
 	@Then("^Pricing Page\\.$")
