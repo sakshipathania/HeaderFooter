@@ -123,8 +123,7 @@ public class Footer extends Setup {
 	@Then("^Free PPT template\\.$")
 	public void Free_PPT_template() throws Throwable {
 
-		WebElement footer_2 = wait.until(ExpectedConditions
-				.elementToBeClickable(By.xpath("/html/body/div[2]/footer/div/div/div[2]/div/div[1]/ul/li[3]/a")));
+		WebElement footer_2 = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@title='Free PPT']")));
 		Thread.sleep(3000);
 		// clear_cache();
 		js.executeScript("arguments[0].scrollIntoView();", footer_2);
@@ -139,8 +138,8 @@ public class Footer extends Setup {
 	@Then("^Free Editable PPT\\.$")
 	public void Free_Ediatble_PPT() throws Throwable {
 
-		WebElement footer_3 = wait.until(ExpectedConditions
-				.elementToBeClickable(By.xpath("/html/body/div[2]/footer/div/div/div[2]/div/div[1]/ul/li[3]/a")));
+		WebElement footer_3 = wait
+				.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@title='Free Editable PPT']")));
 		Thread.sleep(3000);
 		// clear_cache();
 		js.executeScript("arguments[0].scrollIntoView();", footer_3);
@@ -155,8 +154,8 @@ public class Footer extends Setup {
 	@Then("^Free Google Slide\\.$")
 	public void Free_Google_Slide() throws Throwable {
 
-		WebElement footer_4 = wait.until(ExpectedConditions
-				.elementToBeClickable(By.xpath("/html/body/div[2]/footer/div/div/div[2]/div/div[1]/ul/li[5]/a")));
+		WebElement footer_4 = wait
+				.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@title='Free Google Slides']")));
 		Thread.sleep(3000);
 		js.executeScript("arguments[0].scrollIntoView();", footer_4);
 		footer_4.click();
@@ -170,8 +169,8 @@ public class Footer extends Setup {
 	@Then("^Free Timeline\\.$")
 	public void Free_Timeline() throws Throwable {
 
-		WebElement footer_5 = wait.until(ExpectedConditions
-				.elementToBeClickable(By.xpath("/html/body/div[2]/footer/div/div/div[2]/div/div[1]/ul/li[7]/a")));
+		WebElement footer_5 = wait
+				.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@title='Free Timelines']")));
 		Thread.sleep(3000);
 		js.executeScript("arguments[0].scrollIntoView();", footer_5);
 		footer_5.click();
@@ -185,8 +184,8 @@ public class Footer extends Setup {
 	@Then("^Free Investor Pitch\\.$")
 	public void Free_Investor_Pitch() throws Throwable {
 
-		WebElement footer_6 = wait.until(ExpectedConditions
-				.elementToBeClickable(By.xpath("/html/body/div[2]/footer/div/div/div[2]/div/div[1]/ul/li[8]/a")));
+		WebElement footer_6 = wait
+				.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@title='Free Investor Pitch']")));
 		Thread.sleep(3000);
 		js.executeScript("arguments[0].scrollIntoView();", footer_6);
 		footer_6.click();
@@ -200,8 +199,8 @@ public class Footer extends Setup {
 	@Then("^Free Template\\.$")
 	public void Free_Template() throws Throwable {
 
-		WebElement footer_7 = wait.until(ExpectedConditions
-				.elementToBeClickable(By.xpath("/html/body/div[2]/footer/div/div/div[2]/div/div[1]/ul/li[10]/a")));
+		WebElement footer_7 = wait
+				.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@title='Free Templates']")));
 		Thread.sleep(3000);
 		js.executeScript("arguments[0].scrollIntoView();", footer_7);
 		footer_7.click();
@@ -215,8 +214,8 @@ public class Footer extends Setup {
 	@Then("^Free Business Plan\\.$")
 	public void Free_Business_Plan() throws Throwable {
 
-		WebElement footer_8 = wait.until(ExpectedConditions
-				.elementToBeClickable(By.xpath("/html/body/div[2]/footer/div/div/div[2]/div/div[1]/ul/li[12]/a")));
+		WebElement footer_8 = wait
+				.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@title='Free Business Plan']")));
 		Thread.sleep(3000);
 		js.executeScript("arguments[0].scrollIntoView();", footer_8);
 		footer_8.click();
@@ -230,8 +229,8 @@ public class Footer extends Setup {
 	@Then("^View All\\.$")
 	public void View_All() throws Throwable {
 
-		WebElement footer_9 = wait.until(ExpectedConditions
-				.elementToBeClickable(By.xpath("/html/body/div[2]/footer/div/div/div[2]/div/div[1]/ul/li[13]/a")));
+		WebElement footer_9 = wait.until(ExpectedConditions.elementToBeClickable(
+				By.xpath("//a[@href='/free-business-powerpoint-templates'][normalize-space()='View All']")));
 		Thread.sleep(3000);
 		js.executeScript("arguments[0].scrollIntoView();", footer_9);
 		footer_9.click();
@@ -247,8 +246,8 @@ public class Footer extends Setup {
 	@Then("^Action Plan Template\\.$")
 	public void Action_Plan_Template() throws Throwable {
 
-		WebElement footer_10 = wait.until(ExpectedConditions
-				.elementToBeClickable(By.xpath("/html/body/div[2]/footer/div/div/div[2]/div/div[3]/ul/li[1]/a")));
+		WebElement footer_10 = wait
+				.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@title='Action Plan Template']")));
 		Thread.sleep(3000);
 		js.executeScript("arguments[0].scrollIntoView();", footer_10);
 		footer_10.click();
@@ -262,8 +261,8 @@ public class Footer extends Setup {
 	@Then("^Biz Model Canvas\\.$")
 	public void Biz_Model_Canvas() throws Throwable {
 
-		WebElement footer_11 = wait.until(ExpectedConditions
-				.elementToBeClickable(By.xpath("/html/body/div[2]/footer/div/div/div[2]/div/div[3]/ul/li[3]/a")));
+		WebElement footer_11 = wait
+				.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@title='Biz Model Canvas']")));
 		Thread.sleep(3000);
 		js.executeScript("arguments[0].scrollIntoView();", footer_11);
 		footer_11.click();
@@ -278,8 +277,7 @@ public class Footer extends Setup {
 	public void Business_Case_PPT() throws Throwable {
 
 		try {
-			WebElement footer_12 = driver.findElement(By.xpath(
-					"//a[@href='/powerpoint-presentation-essentials/business-case-study-slides.html'][contains(.,'Business Case PPT')]"));
+			WebElement footer_12 = driver.findElement(By.xpath("//a[@title='Business Case PPT']"));
 			Thread.sleep(3000);
 			js.executeScript("arguments[0].scrollIntoView();", footer_12);
 			footer_12.click();
@@ -297,8 +295,7 @@ public class Footer extends Setup {
 	public void Challenges_Slide() throws Throwable {
 
 		try {
-			WebElement footer_14 = driver.findElement(By.xpath(
-					"//a[@href='/powerpoint-presentation-slides/challenges-opportunities.html'][contains(.,'Challenges Slide')]"));
+			WebElement footer_14 = driver.findElement(By.xpath("//a[@title='Challenges Slide']"));
 			Thread.sleep(3000);
 			js.executeScript("arguments[0].scrollIntoView();", footer_14);
 			footer_14.click();
@@ -315,8 +312,7 @@ public class Footer extends Setup {
 	public void Change_Management() throws Throwable {
 
 		try {
-			WebElement footer_15 = driver.findElement(By.xpath(
-					"//a[@href='/change-management-powerpoint-presentation-slides.html'][contains(.,'Change Management')]"));
+			WebElement footer_15 = driver.findElement(By.xpath("//a[@title='Change Management']"));
 			Thread.sleep(3000);
 			js.executeScript("arguments[0].scrollIntoView();", footer_15);
 			footer_15.click();

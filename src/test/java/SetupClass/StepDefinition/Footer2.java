@@ -1,5 +1,6 @@
 package SetupClass.StepDefinition;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -114,11 +115,11 @@ public class Footer2 extends Setup {
 		try {
 			Thread.sleep(3000);
 			WebElement footer_16 = driver.findElement(By.xpath(
-					"//a[@href='/company-overview-powerpoint-presentation-slides.html'][contains(.,'Company PowerPoint"));
+					"//a[@title='Company PowerPoint']"));
 			Thread.sleep(3000);
 			js.executeScript("arguments[0].scrollIntoView();", footer_16);
 			footer_16.click();
-			log.info("FOOTER --> 18 || POPULAR PPT || COMPANY POWERPOINT");
+			log.info("FOOTER --> 18 || POPULAR template || COMPANY POWERPOINT");
 			chat_pop_up();
 			Thread.sleep(1500);
 			err_page();
@@ -131,11 +132,11 @@ public class Footer2 extends Setup {
 
 		try {
 			WebElement footer_17 = driver.findElement(By.xpath(
-					"//a[@href='/powerpoint-presentation-slides/competitive-landscape.html'][contains(.,'Competitor Landscape"));
+					"//a[@title='Competitor Landscape']"));
 			Thread.sleep(3000);
 			js.executeScript("arguments[0].scrollIntoView();", footer_17);
 			footer_17.click();
-			log.info("FOOTER --> 19 || POPULAR PPT || COMPETITOR LANDSCAPE");
+			log.info("FOOTER --> 19 || POPULAR template || COMPETITOR LANDSCAPE");
 			chat_pop_up();
 			Thread.sleep(1500);
 			err_page();
@@ -149,11 +150,11 @@ public class Footer2 extends Setup {
 
 		try {
 			WebElement footer_18 = driver.findElement(By.xpath(
-					"//a[@href='/powerpoint-presentation-slides/current-state-future-state.html'][contains(.,'Current State ppt"));
+					"//a[@title='Current State ppt']"));
 			Thread.sleep(3000);
 			js.executeScript("arguments[0].scrollIntoView();", footer_18);
 			footer_18.click();
-			log.info("FOOTER --> 20 || POPULAR PPT || CURRENT STATE PPT");
+			log.info("FOOTER --> 20 || POPULAR template || CURRENT STATE PPT");
 			chat_pop_up();
 			Thread.sleep(1500);
 			err_page();
@@ -167,7 +168,7 @@ public class Footer2 extends Setup {
 
 		try {
 			WebElement footer_19 = driver.findElement(By.xpath(
-					"//a[@href='/cybersecurity-powerpoint-presentation-slides.html'][contains(.,'Cybersecurity PPT"));
+					"//a[@title='Cybersecurity PPT']"));
 			Thread.sleep(3000);
 			js.executeScript("arguments[0].scrollIntoView();", footer_19);
 			footer_19.click();
@@ -184,7 +185,7 @@ public class Footer2 extends Setup {
 
 		try {
 			WebElement footer_20 = driver.findElement(By.xpath(
-					"//a[@href='/disaster-management-powerpoint-presentation-slides.html'][contains(.,'Disaster Mgmt ppt"));
+					"//a[@title='Disaster Mgmt ppt']"));
 			Thread.sleep(3000);
 			js.executeScript("arguments[0].scrollIntoView();", footer_20);
 			footer_20.click();
@@ -201,7 +202,7 @@ public class Footer2 extends Setup {
 	public void Food_Powerpoint() throws InterruptedException {
 		try {
 			WebElement footer_21 = driver
-					.findElement(By.xpath("//a[@href='/powerpoint-templates/food.html'][contains(.,'Food PowerPoint"));
+					.findElement(By.xpath("//a[@title='Food PowerPoint']"));
 			Thread.sleep(3000);
 			js.executeScript("arguments[0].scrollIntoView();", footer_21);
 			footer_21.click();
@@ -219,7 +220,7 @@ public class Footer2 extends Setup {
 
 		try {
 			WebElement footer_22 = driver.findElement(By.xpath(
-					"//a[@href='/happy-birthday-powerpoint-presentation-slides.html'][contains(.,'Happy Birthday PPT"));
+					"//a[@title='Happy Birthday PPT']"));
 			Thread.sleep(3000);
 			js.executeScript("arguments[0].scrollIntoView();", footer_22);
 			footer_22.click();
@@ -237,7 +238,7 @@ public class Footer2 extends Setup {
 
 		try {
 			WebElement footer_23 = driver.findElement(By.xpath(
-					"//a[@href='/powerpoint-presentation-essentials/human-resource-management-slides.html'][contains(.,'HR Management PPT"));
+					"//a[@title='HR Management PPT']"));
 			Thread.sleep(3000);
 			js.executeScript("arguments[0].scrollIntoView();", footer_23);
 			footer_23.click();
@@ -253,7 +254,7 @@ public class Footer2 extends Setup {
 	public void Introduce_Yourself() throws InterruptedException {
 		try {
 			WebElement footer_24 = driver.findElement(By.xpath(
-					"//a[@href='/introduce-yourself-powerpoint-presentation-slides.html'][contains(.,'Introduce Yourself"));
+					"//a[@title='Introduce Yourself']"));
 			Thread.sleep(3000);
 			js.executeScript("arguments[0].scrollIntoView();", footer_24);
 			footer_24.click();
@@ -270,15 +271,13 @@ public class Footer2 extends Setup {
 	public void View_All_1() throws InterruptedException {
 
 		try {
-			WebElement footer_25 = driver
-					.findElement(By.xpath("//a[@href='/professional-powerpoint-templates'][contains(.,'View All"));
+			List<WebElement> footer_25 = driver.findElements(By.xpath("//a[@title = 'View All']"));
 			Thread.sleep(3000);
+
 			js.executeScript("arguments[0].scrollIntoView();", footer_25);
-			footer_25.click();
-			log.info("FOOTER --> 27 || POPULAR PPT || VIEW ALL");
+			footer_25.get(2).click();
+			log.info("FOOTER --> 34 || POPULAR PPT || VIEW ALL");
 			chat_pop_up();
-			Thread.sleep(1500);
-			err_page();
 		} catch (NoSuchElementException va) {
 		}
 	}
@@ -289,8 +288,7 @@ public class Footer2 extends Setup {
 	public void Master_Thesis_PPT() throws InterruptedException {
 
 		try {
-			WebElement footer_26 = driver.findElement(By.xpath(
-					"//a[@href='/master-thesis-defense-structure-powerpoint-presentation-slides.html'][contains(.,'Master Thesis PPT"));
+			WebElement footer_26 = driver.findElement(By.xpath("//a[@title='Master Thesis PPT']"));
 			Thread.sleep(3000);
 			js.executeScript("arguments[0].scrollIntoView();", footer_26);
 			footer_26.click();
@@ -306,8 +304,7 @@ public class Footer2 extends Setup {
 	public void Org_Structure_PPT() throws InterruptedException {
 
 		try {
-			WebElement footer_27 = driver.findElement(By.xpath(
-					"//a[@href='/powerpoint-presentation-essentials/organizational-structure-slides.html'][contains(.,'Org Structure PPT"));
+			WebElement footer_27 = driver.findElement(By.xpath("//a[@title='Org Structure PPT']"));
 			Thread.sleep(1000);
 			js.executeScript("arguments[0].scrollIntoView();", footer_27);
 			footer_27.click();
@@ -323,8 +320,7 @@ public class Footer2 extends Setup {
 	public void PPT_Table_Design() throws InterruptedException {
 
 		try {
-			WebElement footer_28 = driver.findElement(By.xpath(
-					"//a[@href='/flat-design-diagrams/tables-matrix-flat-designs.html'][contains(.,'PPT Table Design"));
+			WebElement footer_28 = driver.findElement(By.xpath("//a[@title='PPT Table Design']"));
 			Thread.sleep(3000);
 			js.executeScript("arguments[0].scrollIntoView();", footer_28);
 			footer_28.click();
@@ -340,8 +336,7 @@ public class Footer2 extends Setup {
 	public void Sample_PPT() throws InterruptedException {
 
 		try {
-			WebElement footer_29 = driver.findElement(By.xpath(
-					"//a[@href='/sample-powerpoint-career-portfolio-powerpoint-presentation-slides.html'][contains(.,'Sample PPT"));
+			WebElement footer_29 = driver.findElement(By.xpath("//a[@title='Sample PPT']"));
 			Thread.sleep(3000);
 			js.executeScript("arguments[0].scrollIntoView();", footer_29);
 			footer_29.click();
@@ -357,8 +352,7 @@ public class Footer2 extends Setup {
 	public void Swimlane_Templates() throws InterruptedException {
 
 		try {
-			WebElement footer_30 = driver.findElement(By.xpath(
-					"//a[@href='/powerpoint-presentation-essentials/swimlanes-ppt-templates.html'][contains(.,'Swimlane Templates"));
+			WebElement footer_30 = driver.findElement(By.xpath("//a[@title='Swimlane Templates']"));
 			Thread.sleep(3000);
 			js.executeScript("arguments[0].scrollIntoView();", footer_30);
 			footer_30.click();
@@ -374,8 +368,7 @@ public class Footer2 extends Setup {
 	public void PPT_Backgrounds() throws InterruptedException {
 
 		try {
-			WebElement footer_31 = driver.findElement(
-					By.xpath("//a[@href='/powerpoint-templates/background.html'][contains(.,'PPT Backgrounds"));
+			WebElement footer_31 = driver.findElement(By.xpath("//a[@title='PPT Backgrounds']"));
 			Thread.sleep(3000);
 			js.executeScript("arguments[0].scrollIntoView();", footer_31);
 			footer_31.click();
@@ -391,11 +384,11 @@ public class Footer2 extends Setup {
 	public void View_All_3() throws InterruptedException {
 
 		try {
-			WebElement footer_32 = driver
-					.findElement(By.xpath("//a[@href='/professional-powerpoint-templates'][contains(.,'View All"));
+			List<WebElement> footer_32 = driver.findElements(By.xpath("//a[@title = 'View All']"));
 			Thread.sleep(3000);
+
 			js.executeScript("arguments[0].scrollIntoView();", footer_32);
-			footer_32.click();
+			footer_32.get(3).click();
 			log.info("FOOTER --> 34 || POPULAR PPT || VIEW ALL");
 			chat_pop_up();
 			Thread.sleep(1500);
