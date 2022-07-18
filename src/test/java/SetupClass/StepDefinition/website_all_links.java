@@ -355,8 +355,8 @@ public class website_all_links extends Setup {
 
 	@Then("^Popular Free Slides Page\\.$")
 	public void Popular_Free_Slides_Page() throws Throwable {
-		WebElement popular_free_footer = wait.until(ExpectedConditions
-				.elementToBeClickable(By.xpath("/html/body/div[2]/footer/div/div/div[2]/div/div[6]/ul/li[7]/a")));
+		WebElement popular_free_footer = wait
+				.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@title='Popular Free Slides']")));
 		Thread.sleep(3000);
 		// clear_cache();
 		js.executeScript("arguments[0].scrollIntoView();", popular_free_footer);
@@ -441,8 +441,8 @@ public class website_all_links extends Setup {
 
 	@Then("^Color PPT\\.$")
 	public void Color_PPT() throws Throwable {
-		WebElement color_footer = wait.until(ExpectedConditions
-				.elementToBeClickable(By.xpath("/html/body/div[2]/footer/div/div/div[2]/div/div[2]/ul/li[1]/a")));
+		WebElement color_footer = wait
+				.until(ExpectedConditions.elementToBeClickable(By.xpath("///a[@title='Color PPT']")));
 		Thread.sleep(3000);
 		// clear_cache();
 		js.executeScript("arguments[0].scrollIntoView();", color_footer);
@@ -455,8 +455,8 @@ public class website_all_links extends Setup {
 
 	@Then("^Google Powerpoint\\.$")
 	public void Google_Powerpoint() throws Throwable {
-		WebElement Google_footer = wait.until(ExpectedConditions
-				.elementToBeClickable(By.xpath("/html/body/div[2]/footer/div/div/div[2]/div/div[2]/ul/li[4]/a")));
+		WebElement Google_footer = wait
+				.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@title='Google Powerpoint']")));
 		Thread.sleep(3000);
 		// clear_cache();
 		js.executeScript("arguments[0].scrollIntoView();", Google_footer);
@@ -470,8 +470,8 @@ public class website_all_links extends Setup {
 
 	@Then("^Highlight Picture PPT\\.$")
 	public void Highlight_Picture_PPT() throws Throwable {
-		WebElement Highlight_footer = wait.until(ExpectedConditions
-				.elementToBeClickable(By.xpath("/html/body/div[2]/footer/div/div/div[2]/div/div[2]/ul/li[7]/a")));
+		WebElement Highlight_footer = wait
+				.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@title='Highlight Picture PPT']")));
 		Thread.sleep(3000);
 		// clear_cache();
 		js.executeScript("arguments[0].scrollIntoView();", Highlight_footer);
@@ -485,8 +485,8 @@ public class website_all_links extends Setup {
 
 	@Then("^PPT Zoom Image\\.$")
 	public void PPT_Zoom_Image() throws Throwable {
-		WebElement Zoom_footer = wait.until(ExpectedConditions
-				.elementToBeClickable(By.xpath("/html/body/div[2]/footer/div/div/div[2]/div/div[2]/ul/li[11]/a")));
+		WebElement Zoom_footer = wait
+				.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@title='PPT Zoom Image']")));
 		Thread.sleep(3000);
 		// clear_cache();
 		js.executeScript("arguments[0].scrollIntoView();", Zoom_footer);
@@ -500,8 +500,8 @@ public class website_all_links extends Setup {
 
 	@Then("^PPT Puzzle Pieces\\.$")
 	public void PPT_Puzzle_Pieces() throws Throwable {
-		WebElement Puzzle_footer = wait.until(ExpectedConditions
-				.elementToBeClickable(By.xpath("/html/body/div[2]/footer/div/div/div[2]/div/div[2]/ul/li[14]/a")));
+		WebElement Puzzle_footer = wait
+				.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@title='PPT Puzzle Pieces']")));
 		Thread.sleep(3000);
 		// clear_cache();
 		js.executeScript("arguments[0].scrollIntoView();", Puzzle_footer);
