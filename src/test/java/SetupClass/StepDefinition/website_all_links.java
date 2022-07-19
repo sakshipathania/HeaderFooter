@@ -437,7 +437,7 @@ public class website_all_links extends Setup {
 	@Then("^Color PPT\\.$")
 	public void Color_PPT() throws Throwable {
 		WebElement color_footer = wait
-				.until(ExpectedConditions.elementToBeClickable(By.xpath("///a[@title='Color PPT']")));
+				.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@title='Color PPT']")));
 		Thread.sleep(3000);
 		// clear_cache();
 		js.executeScript("arguments[0].scrollIntoView();", color_footer);
