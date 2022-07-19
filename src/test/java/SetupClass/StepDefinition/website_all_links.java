@@ -136,6 +136,7 @@ public class website_all_links extends Setup {
 			WebElement free_ppt = wait
 					.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@title='Free Samples']")));
 			action.moveToElement(free_ppt).click().perform();
+			Thread.sleep(3000);
 		} catch (NoSuchElementException e) {
 
 		}
