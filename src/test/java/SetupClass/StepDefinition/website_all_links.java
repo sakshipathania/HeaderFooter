@@ -126,20 +126,19 @@ public class website_all_links extends Setup {
 	@Then("^Free PPTs Page\\.$")
 	public void Free_PPTs_Page() throws Throwable {
 
-		/*
-		 * WebElement free_ppt = wait.until(ExpectedConditions.elementToBeClickable(By.
-		 * xpath("//a[@class='menu-link'][contains(.,'Free PPTs')]"))); clear_cache();
-		 * Thread.sleep(3000); free_ppt.click(); log.info("FREE PPT");
-		 * Thread.sleep(3000); chat_pop_up(); err_page();
-		 */
-		Thread.sleep(5000);
-		Actions actions = new Actions(driver);
-		WebElement free_ppt_btn1 = wait.until(ExpectedConditions.elementToBeClickable(By.linkText("Free Stuff")));
-		Thread.sleep(3000);
-		actions.moveToElement(free_ppt_btn1)
-				.moveToElement(driver.findElement(By.xpath("//a[contains(text(),'Free PPTs')]"))).click().build()
-				.perform();
-		Thread.sleep(3000);
+		try {
+			Thread.sleep(3000);
+			WebElement free_Stuff = wait.until(ExpectedConditions.elementToBeClickable(
+					By.xpath("//li[@class='menu-item has-sub-class']//a[@title = 'Free Stuff']")));
+			Actions action = new Actions(driver);
+			action.moveToElement(free_Stuff).perform();
+			Thread.sleep(3000);
+			WebElement free_ppt = wait
+					.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@title='Free Samples']")));
+			action.moveToElement(free_ppt).click().perform();
+		} catch (NoSuchElementException e) {
+
+		}
 
 	}
 
