@@ -10,6 +10,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -43,6 +44,10 @@ public class Setup{
 				WebDriverManager.chromedriver().setup();
 				ChromeOptions options = new ChromeOptions();
 				options.addArguments("--disable-notifications");
+				options.addArguments("--incognito"); // DesiredCapabilities object
+				DesiredCapabilities c = DesiredCapabilities.chrome(); // set capability to
+				c.setCapability(ChromeOptions.CAPABILITY, options);
+
 				driver = new ChromeDriver(options);
 				driver.manage().window().maximize();
 				Thread.sleep(1000);

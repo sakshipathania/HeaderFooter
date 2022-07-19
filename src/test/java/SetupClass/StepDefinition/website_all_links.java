@@ -135,16 +135,11 @@ public class website_all_links extends Setup {
 		Thread.sleep(5000);
 		Actions actions = new Actions(driver);
 		WebElement free_ppt_btn1 = wait.until(ExpectedConditions.elementToBeClickable(By.linkText("Free Stuff")));
+		Thread.sleep(3000);
 		actions.moveToElement(free_ppt_btn1)
 				.moveToElement(driver.findElement(By.xpath("//a[contains(text(),'Free PPTs')]"))).click().build()
 				.perform();
-		Thread.sleep(7000);
-
-		WebElement free_ppt_btn2 = wait.until(ExpectedConditions.elementToBeClickable(By.linkText("Free Stuff")));
-		actions.moveToElement(free_ppt_btn2)
-				.moveToElement(driver.findElement(By.xpath("//a[contains(text(),'Free Business PPTs')]"))).click()
-				.build().perform();
-		Thread.sleep(7000);
+		Thread.sleep(3000);
 
 	}
 

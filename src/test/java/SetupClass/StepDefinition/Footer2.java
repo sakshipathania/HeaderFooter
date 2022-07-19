@@ -114,8 +114,7 @@ public class Footer2 extends Setup {
 
 		try {
 			Thread.sleep(3000);
-			WebElement footer_16 = driver.findElement(By.xpath(
-					"//a[@title='Company PowerPoint']"));
+			WebElement footer_16 = driver.findElement(By.xpath("//a[@title='Company PowerPoint']"));
 			Thread.sleep(3000);
 			js.executeScript("arguments[0].scrollIntoView();", footer_16);
 			footer_16.click();
@@ -131,8 +130,7 @@ public class Footer2 extends Setup {
 	public void Competitor_landscape() throws Throwable {
 
 		try {
-			WebElement footer_17 = driver.findElement(By.xpath(
-					"//a[@title='Competitor Landscape']"));
+			WebElement footer_17 = driver.findElement(By.xpath("//a[@title='Competitor Landscape']"));
 			Thread.sleep(3000);
 			js.executeScript("arguments[0].scrollIntoView();", footer_17);
 			footer_17.click();
@@ -149,8 +147,7 @@ public class Footer2 extends Setup {
 	public void Current_State_PPT() throws Throwable {
 
 		try {
-			WebElement footer_18 = driver.findElement(By.xpath(
-					"//a[@title='Current State ppt']"));
+			WebElement footer_18 = driver.findElement(By.xpath("//a[@title='Current State ppt']"));
 			Thread.sleep(3000);
 			js.executeScript("arguments[0].scrollIntoView();", footer_18);
 			footer_18.click();
@@ -167,8 +164,7 @@ public class Footer2 extends Setup {
 	public void Cybersecurity_PPT() throws Throwable {
 
 		try {
-			WebElement footer_19 = driver.findElement(By.xpath(
-					"//a[@title='Cybersecurity PPT']"));
+			WebElement footer_19 = driver.findElement(By.xpath("//a[@title='Cybersecurity PPT']"));
 			Thread.sleep(3000);
 			js.executeScript("arguments[0].scrollIntoView();", footer_19);
 			footer_19.click();
@@ -184,8 +180,7 @@ public class Footer2 extends Setup {
 	public void Disaster_Mgmt_ppt() throws Throwable {
 
 		try {
-			WebElement footer_20 = driver.findElement(By.xpath(
-					"//a[@title='Disaster Mgmt ppt']"));
+			WebElement footer_20 = driver.findElement(By.xpath("//a[@title='Disaster Mgmt ppt']"));
 			Thread.sleep(3000);
 			js.executeScript("arguments[0].scrollIntoView();", footer_20);
 			footer_20.click();
@@ -201,8 +196,7 @@ public class Footer2 extends Setup {
 	@Then("Food Powerpoint\\.$")
 	public void Food_Powerpoint() throws InterruptedException {
 		try {
-			WebElement footer_21 = driver
-					.findElement(By.xpath("//a[@title='Food PowerPoint']"));
+			WebElement footer_21 = driver.findElement(By.xpath("//a[@title='Food PowerPoint']"));
 			Thread.sleep(3000);
 			js.executeScript("arguments[0].scrollIntoView();", footer_21);
 			footer_21.click();
@@ -219,8 +213,7 @@ public class Footer2 extends Setup {
 	public void Happy_Birthday_PPT() throws InterruptedException {
 
 		try {
-			WebElement footer_22 = driver.findElement(By.xpath(
-					"//a[@title='Happy Birthday PPT']"));
+			WebElement footer_22 = driver.findElement(By.xpath("//a[@title='Happy Birthday PPT']"));
 			Thread.sleep(3000);
 			js.executeScript("arguments[0].scrollIntoView();", footer_22);
 			footer_22.click();
@@ -237,8 +230,7 @@ public class Footer2 extends Setup {
 	public void HR_Management_PPT() throws InterruptedException {
 
 		try {
-			WebElement footer_23 = driver.findElement(By.xpath(
-					"//a[@title='HR Management PPT']"));
+			WebElement footer_23 = driver.findElement(By.xpath("//a[@title='HR Management PPT']"));
 			Thread.sleep(3000);
 			js.executeScript("arguments[0].scrollIntoView();", footer_23);
 			footer_23.click();
@@ -253,8 +245,7 @@ public class Footer2 extends Setup {
 	@Then("Introduce Yourself\\.$")
 	public void Introduce_Yourself() throws InterruptedException {
 		try {
-			WebElement footer_24 = driver.findElement(By.xpath(
-					"//a[@title='Introduce Yourself']"));
+			WebElement footer_24 = driver.findElement(By.xpath("//a[@title='Introduce Yourself']"));
 			Thread.sleep(3000);
 			js.executeScript("arguments[0].scrollIntoView();", footer_24);
 			footer_24.click();
@@ -274,7 +265,7 @@ public class Footer2 extends Setup {
 			List<WebElement> footer_25 = driver.findElements(By.xpath("//a[@title = 'View All']"));
 			Thread.sleep(3000);
 
-			js.executeScript("arguments[0].scrollIntoView();", footer_25);
+			// js.executeScript("arguments[0].scrollIntoView();", footer_25);
 			footer_25.get(2).click();
 			log.info("FOOTER --> 34 || POPULAR PPT || VIEW ALL");
 			chat_pop_up();
@@ -387,7 +378,7 @@ public class Footer2 extends Setup {
 			List<WebElement> footer_32 = driver.findElements(By.xpath("//a[@title = 'View All']"));
 			Thread.sleep(3000);
 
-			js.executeScript("arguments[0].scrollIntoView();", footer_32);
+			// js.executeScript("arguments[0].scrollIntoView();", footer_32);
 			footer_32.get(3).click();
 			log.info("FOOTER --> 34 || POPULAR PPT || VIEW ALL");
 			chat_pop_up();
