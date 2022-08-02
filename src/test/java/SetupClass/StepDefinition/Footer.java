@@ -153,11 +153,11 @@ public class Footer extends Setup {
 
 	@Then("^Free Google Slide\\.$")
 	public void Free_Google_Slide() throws Throwable {
-
+		Thread.sleep(1500);
 		WebElement footer_4 = wait
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@title='Free Google Slides']")));
 		Thread.sleep(3000);
-		js.executeScript("arguments[0].scrollIntoView();", footer_4);
+	//	js.executeScript("arguments[0].scrollIntoView();", footer_4);
 		footer_4.click();
 		log.info("FOOTER --> 5 || FREE STUFF || FREE GOOGLE SLIDE ");
 		chat_pop_up();
