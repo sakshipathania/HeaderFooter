@@ -20,6 +20,7 @@ public class Footer extends Setup {
 	JavascriptExecutor js = (JavascriptExecutor) driver;
 
 	public void clear_cache() throws InterruptedException {
+		driver.get(AppURL);
 		driver.manage().deleteAllCookies();
 		Thread.sleep(4000); // wait 4 seconds to clear cookies.
 		driver.navigate().refresh();
@@ -153,13 +154,13 @@ public class Footer extends Setup {
 
 	@Then("^Free Google Slide\\.$")
 	public void Free_Google_Slide() throws Throwable {
-		Thread.sleep(1500);
+		Thread.sleep(3000);
 		WebElement footer_4 = wait
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@title='Free Google Slides']")));
 		Thread.sleep(3000);
-	//	js.executeScript("arguments[0].scrollIntoView();", footer_4);
-		footer_4.click();
-		log.info("FOOTER --> 5 || FREE STUFF || FREE GOOGLE SLIDE ");
+		js.executeScript("arguments[0].scrollIntoView(true);", footer_4);
+		js.executeScript("arguments[0].click();", footer_4);
+		log.info("FOOTER --> 5 || FEE STUFF || FREE GOOGLE SLIDE ");
 		chat_pop_up();
 		Thread.sleep(1500);
 		err_page();
@@ -173,7 +174,7 @@ public class Footer extends Setup {
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@title='Free Timelines']")));
 		Thread.sleep(3000);
 		js.executeScript("arguments[0].scrollIntoView();", footer_5);
-		footer_5.click();
+		js.executeScript("arguments[0].click();", footer_5);
 		log.info("FOOTER --> 7 || FREE STUFF || FREE TIMELINE");
 		chat_pop_up();
 		Thread.sleep(1500);
@@ -188,7 +189,7 @@ public class Footer extends Setup {
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@title='Free Investor Pitch']")));
 		Thread.sleep(3000);
 		js.executeScript("arguments[0].scrollIntoView();", footer_6);
-		footer_6.click();
+		js.executeScript("arguments[0].click();", footer_6);
 		log.info("FOOTER --> 8 || FREE STUFF || FREE INVESTOR PITCH");
 		chat_pop_up();
 		Thread.sleep(1500);
@@ -203,7 +204,7 @@ public class Footer extends Setup {
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@title='Free Templates']")));
 		Thread.sleep(3000);
 		js.executeScript("arguments[0].scrollIntoView();", footer_7);
-		footer_7.click();
+		js.executeScript("arguments[0].click();", footer_7);
 		log.info("FOOTER --> 10 || FREE STUFF || FREE TEMPLATE");
 		chat_pop_up();
 		Thread.sleep(1500);
@@ -218,7 +219,7 @@ public class Footer extends Setup {
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@title='Free Business Plan']")));
 		Thread.sleep(3000);
 		js.executeScript("arguments[0].scrollIntoView();", footer_8);
-		footer_8.click();
+		js.executeScript("arguments[0].click();", footer_8);
 		log.info("FOOTER --> 11 || FREE STUFF || FREE BUSINESS PLAN");
 		chat_pop_up();
 		Thread.sleep(1500);
@@ -233,7 +234,7 @@ public class Footer extends Setup {
 				By.xpath("//a[@href='/free-business-powerpoint-templates'][normalize-space()='View All']")));
 		Thread.sleep(3000);
 		js.executeScript("arguments[0].scrollIntoView();", footer_9);
-		footer_9.click();
+		js.executeScript("arguments[0].click();", footer_9);
 		log.info("FOOTER --> 12 || FREE STUFF || View All");
 		chat_pop_up();
 		Thread.sleep(1500);
@@ -250,7 +251,7 @@ public class Footer extends Setup {
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@title='Action Plan Template']")));
 		Thread.sleep(3000);
 		js.executeScript("arguments[0].scrollIntoView();", footer_10);
-		footer_10.click();
+		js.executeScript("arguments[0].click();", footer_10);
 		log.info("FOOTER --> 13 || POPULAR PPT || ACTION PLAN TEMPLATE");
 		chat_pop_up();
 		Thread.sleep(1500);
@@ -265,7 +266,7 @@ public class Footer extends Setup {
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@title='Biz Model Canvas']")));
 		Thread.sleep(3000);
 		js.executeScript("arguments[0].scrollIntoView();", footer_11);
-		footer_11.click();
+		js.executeScript("arguments[0].click();", footer_11);
 		log.info("FOOTER --> 14 || POPULAR PPT || BIZ MODEL CANVAS");
 		chat_pop_up();
 		Thread.sleep(1500);
@@ -280,7 +281,7 @@ public class Footer extends Setup {
 			WebElement footer_12 = driver.findElement(By.xpath("//a[@title='Business Case PPT']"));
 			Thread.sleep(3000);
 			js.executeScript("arguments[0].scrollIntoView();", footer_12);
-			footer_12.click();
+			js.executeScript("arguments[0].click();", footer_12);
 			log.info("FOOTER --> 15 || POPULAR PPT || BUSINESS CASE PPT");
 			chat_pop_up();
 			Thread.sleep(1500);
@@ -298,7 +299,7 @@ public class Footer extends Setup {
 			WebElement footer_14 = driver.findElement(By.xpath("//a[@title='Challenges Slide']"));
 			Thread.sleep(3000);
 			js.executeScript("arguments[0].scrollIntoView();", footer_14);
-			footer_14.click();
+			js.executeScript("arguments[0].click();", footer_14);
 			log.info("FOOTER --> 16 || POPULAR PPT || CHALLENGES SLIDE");
 			chat_pop_up();
 			Thread.sleep(1500);
@@ -315,7 +316,7 @@ public class Footer extends Setup {
 			WebElement footer_15 = driver.findElement(By.xpath("//a[@title='Change Management']"));
 			Thread.sleep(3000);
 			js.executeScript("arguments[0].scrollIntoView();", footer_15);
-			footer_15.click();
+			js.executeScript("arguments[0].click();", footer_15);
 			log.info("FOOTER --> 17 || POPULAR PPT || CHANAGE MANAGEMENT");
 			chat_pop_up();
 			Thread.sleep(1500);
