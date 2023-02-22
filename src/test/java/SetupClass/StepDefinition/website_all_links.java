@@ -91,10 +91,10 @@ public class website_all_links extends Setup {
 	public void user_enter_email_and_password_epu() throws InterruptedException {
 		WebElement old_paid_email = wait
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='email']")));
-		old_paid_email.sendKeys("nishadhiman0027@gmail.com");
+		old_paid_email.sendKeys("teamHeaderAndFooterTest@gmail.com");
 
 		WebElement old_paid_pass = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='pass']")));
-		old_paid_pass.sendKeys("Qwerty@1");
+		old_paid_pass.sendKeys("123456");
 
 		Thread.sleep(3000);
 		WebElement old_paid_login_btn = wait
@@ -191,8 +191,9 @@ public class website_all_links extends Setup {
 		eBooks.click();
 		log.info("EBOOKS");
 		Thread.sleep(3000);
-		chat_pop_up();
+		//chat_pop_up();
 		err_page();
+		Thread.sleep(3000);
 		/*
 		 * Thread.sleep(5000); Actions actions = new Actions(driver); WebElement
 		 * Learn_btn1=wait.until(ExpectedConditions.elementToBeClickable(By.linkText(
