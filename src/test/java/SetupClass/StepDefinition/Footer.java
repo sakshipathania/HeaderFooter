@@ -88,10 +88,10 @@ public class Footer extends Setup {
 
 		WebElement old_paid_email = wait
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='email']")));
-		old_paid_email.sendKeys("nishadhiman0027@gmail.com");
+		old_paid_email.sendKeys("TeamHeaderAndFooter@mailinator.com");
 
 		WebElement old_paid_pass = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='pass']")));
-		old_paid_pass.sendKeys("Qwerty@1");
+		old_paid_pass.sendKeys("123456");
 
 		Thread.sleep(3000);
 		WebElement old_paid_login_btn = wait
@@ -113,7 +113,7 @@ public class Footer extends Setup {
 		Thread.sleep(3000);
 		// clear_cache();
 		js.executeScript("arguments[0].scrollIntoView();", footer_1);
-		footer_1.click();
+		js.executeScript("arguments[0].click();", footer_1);
 		log.info("FOOTER --> 1 || FREE STUFF || FREE BUSINESS PPT");
 		chat_pop_up();
 		Thread.sleep(1500);
